@@ -63,7 +63,7 @@ runs:
     - name: Create the Linear Issue if no identifier found.
       id: create
       if: ${{always() && steps.find.outcome == 'failure'}}
-      uses: risc0/action-create-linear-issue@v0.5
+      uses: risc0/action-create-linear-issue@risc0
       with:
         linear-api-key: ${{inputs.linear-api-key}}
         linear-team-key: ${{inputs.linear-team-key}}
